@@ -98,7 +98,7 @@ questions = [
     },
     {
         "section": "Lenguaje y Expresiones",
-        "q": "14. ¿Cómo se dice 'hola' en español?",
+        "q": "14. ¿Cómo se dice 'Olá' en español?",
         "options": ["Bonjour", "Hello", "Hola"],
         "answer": "Hola"
     },
@@ -111,7 +111,7 @@ questions = [
     {
         "section": "Lenguaje y Expresiones",
         "q": "16. ¿Qué significa 'gracias'?",
-        "options": ["Buenos días", "De nada", "Gracias"],
+        "options": ["Bom dia", "De nada", "Obrigado"],
         "answer": "Gracias"
     },
     {
