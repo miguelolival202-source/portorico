@@ -112,9 +112,9 @@ questions = [
         "section": "Lenguaje y Expresiones",
         "q": "16. ¿Qué significa 'gracias'?",
         "options": ["Bom dia", "De nada", "Obrigado"],
-        "answer": "Gracias"
+        "answer": "Obrigado"
     },
-    {
+    {    
         "section": "Curiosidades y Datos Interesantes",
         "q": "17. Puerto Rico tiene playas que brillan de noche debido a:",
         "options": ["Lava", "Bioluminiscencia", "Oro en el agua"],
