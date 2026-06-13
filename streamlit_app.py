@@ -123,7 +123,7 @@ questions = [
     {
         "section": "Curiosidades y Datos Interesantes",
         "q": "18. ¿Puerto Rico participa en los Juegos Olímpicos con equipo propio?",
-        "options": ["Sí", "No", "Solo algunas veces"],
+        "options": ["Sí", "No"],
         "answer": "Sí"
     },
     {
