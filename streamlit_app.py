@@ -1,137 +1,205 @@
+```python
 import streamlit as st
 
 st.set_page_config(
-    page_title="Quiz sobre Porto Rico",
+    page_title="Quiz sobre Puerto Rico",
     page_icon="🇵🇷"
 )
 
-st.title("🇵🇷 Quiz sobre Porto Rico 🇵🇷")
+st.title("🇵🇷 Quiz sobre Puerto Rico 🇵🇷")
 
 st.markdown("""
-### 📖 Texto Informativo
+# 📖 Conociendo Puerto Rico
 
-Porto Rico é um território dos Estados Unidos localizado no Caribe.
-Sua capital é San Juan. O espanhol é o idioma mais falado, mas o inglês
-também é amplamente utilizado.
+Puerto Rico es una isla ubicada en el mar Caribe y un territorio de los
+Estados Unidos. Su capital es San Juan, una de las ciudades más antiguas
+de América y un importante centro histórico de la región.
 
-A ilha é famosa por suas praias, pela Floresta Nacional El Yunque,
-pela cultura vibrante, pelo reggaeton e pelo famoso sapinho Coquí.
+La isla posee una rica mezcla cultural formada por influencias taínas,
+españolas, africanas y estadounidenses. Esta combinación puede observarse
+en la música, la gastronomía, las tradiciones y la arquitectura.
+
+El español es el idioma más hablado, aunque el inglés también es utilizado
+ampliamente en la vida cotidiana y en las instituciones oficiales.
+
+Puerto Rico es famoso por sus hermosas playas de arena blanca y aguas
+cristalinas. Entre ellas destaca Flamenco Beach, considerada una de las
+mejores playas del mundo.
+
+Otro lugar muy importante es el Bosque Nacional El Yunque, una selva
+tropical que alberga una gran diversidad de plantas y animales.
+
+La música forma parte esencial de la identidad puertorriqueña. Géneros
+como el reguetón han alcanzado fama internacional gracias a artistas de
+la isla.
+
+La gastronomía también es muy reconocida. Uno de los platos más típicos
+es el mofongo, preparado principalmente con plátano verde.
+
+Uno de los símbolos más queridos de Puerto Rico es el coquí, una pequeña
+rana cuyo canto es característico de las noches puertorriqueñas.
+
+La isla también es conocida por sus bahías bioluminiscentes, donde
+organismos microscópicos producen un brillo azul verdoso en el agua.
+
+Además, Puerto Rico participa con delegación propia en los Juegos
+Olímpicos y en otras competencias internacionales.
+
+¡Ahora pon a prueba tus conocimientos sobre Puerto Rico!
 """)
 
-perguntas = (
+preguntas = (
 
-("Qual é a capital de Porto Rico?",
+("¿Cuál es la capital de Puerto Rico?",
  ("Ponce", "San Juan", "Mayagüez"),
  "San Juan"),
 
-("Porto Rico é um território de qual país?",
- ("Espanha", "México", "Estados Unidos"),
+("Puerto Rico es un territorio de qué país?",
+ ("España", "México", "Estados Unidos"),
  "Estados Unidos"),
 
-("Qual moeda é usada em Porto Rico?",
- ("Euro", "Peso", "Dólar americano"),
- "Dólar americano"),
+("¿Qué moneda se utiliza en Puerto Rico?",
+ ("Euro", "Peso", "Dólar estadounidense"),
+ "Dólar estadounidense"),
 
-("Em qual região Porto Rico está localizado?",
- ("Europa", "Caribe", "Ásia"),
+("¿En qué región se encuentra Puerto Rico?",
+ ("Europa", "Caribe", "Asia"),
  "Caribe"),
 
-("Qual floresta tropical famosa existe em Porto Rico?",
- ("Amazônia", "Floresta Nacional El Yunque", "Floresta Negra"),
- "Floresta Nacional El Yunque"),
+("¿Qué bosque tropical famoso existe en Puerto Rico?",
+ ("Amazonía", "Bosque Nacional El Yunque", "Selva Negra"),
+ "Bosque Nacional El Yunque"),
 
-("Qual cidade histórica é muito visitada por turistas?",
+("¿Qué ciudad histórica es muy visitada por turistas?",
  ("Bayamón", "Caguas", "Old San Juan"),
  "Old San Juan"),
 
-("O que atrai muitos turistas para Porto Rico?",
- ("Neve", "Praias e cultura", "Vulcões ativos"),
- "Praias e cultura"),
+("¿Qué atrae a muchos turistas a Puerto Rico?",
+ ("Nieve", "Playas y cultura", "Volcanes activos"),
+ "Playas y cultura"),
 
-("Qual destas praias é famosa em Porto Rico?",
+("¿Cuál de estas playas es famosa en Puerto Rico?",
  ("Copacabana", "Waikiki", "Flamenco Beach"),
  "Flamenco Beach"),
 
-("Qual estilo musical é muito popular em Porto Rico?",
- ("Reggaeton", "Samba", "K-pop"),
- "Reggaeton"),
+("¿Qué estilo musical es muy popular en Puerto Rico?",
+ ("Reguetón", "Samba", "K-pop"),
+ "Reguetón"),
 
-("Qual instrumento é tradicional na música porto-riquenha?",
- ("Violino", "Cuatro", "Gaita"),
+("¿Qué instrumento es tradicional en la música puertorriqueña?",
+ ("Violín", "Cuatro", "Gaita"),
  "Cuatro"),
 
-("Uma comida típica de Porto Rico é:",
+("Una comida típica de Puerto Rico es:",
  ("Sushi", "Tacos", "Mofongo"),
  "Mofongo"),
 
-("As festas porto-riquenhas costumam ter:",
- ("Dança e música", "Silêncio total", "Apenas esportes"),
- "Dança e música"),
+("Las fiestas puertorriqueñas suelen tener:",
+ ("Baile y música", "Silencio total", "Solo deportes"),
+ "Baile y música"),
 
-("Qual idioma é mais falado em Porto Rico?",
- ("Francês", "Espanhol", "Italiano"),
- "Espanhol"),
+("¿Cuál es el idioma más hablado en Puerto Rico?",
+ ("Francés", "Español", "Italiano"),
+ "Español"),
 
-("Como se diz 'olá' em espanhol?",
+("¿Cómo se dice 'hola' en español?",
  ("Bonjour", "Hello", "Hola"),
  "Hola"),
 
-("Qual outro idioma também é bastante usado em Porto Rico?",
- ("Inglês", "Japonês", "Alemão"),
- "Inglês"),
+("¿Qué otro idioma también se utiliza mucho en Puerto Rico?",
+ ("Inglés", "Japonés", "Alemán"),
+ "Inglés"),
 
-("O que significa 'gracias'?",
- ("Bom dia", "Obrigado", "Até logo"),
- "Obrigado"),
+("¿Qué significa 'gracias'?",
+ ("Buenos días", "Gracias", "Hasta luego"),
+ "Gracias"),
 
-("Porto Rico possui praias que brilham à noite devido a:",
- ("Lava", "Bioluminescência", "Ouro na água"),
- "Bioluminescência"),
+("Puerto Rico posee playas que brillan por la noche debido a:",
+ ("Lava", "Bioluminiscencia", "Oro en el agua"),
+ "Bioluminiscencia"),
 
-("Porto Rico participa das Olimpíadas com equipe própria?",
- ("Sim", "Não", "Apenas às vezes"),
- "Sim"),
+("¿Puerto Rico participa en los Juegos Olímpicos con equipo propio?",
+ ("Sí", "No", "A veces"),
+ "Sí"),
 
-("Qual animal é símbolo famoso de Porto Rico?",
- ("Coquí", "Canguru", "Panda"),
+("¿Qué animal es un símbolo famoso de Puerto Rico?",
+ ("Coquí", "Canguro", "Panda"),
  "Coquí"),
 
-("Porto Rico é uma:",
- ("Ilha", "Montanha", "Península"),
- "Ilha"),
+("Puerto Rico es una:",
+ ("Isla", "Montaña", "Península"),
+ "Isla"),
 
-("DESAFIO BÔNUS: Qual famosa cantora e atriz nasceu em Porto Rico?",
+("DESAFÍO EXTRA: ¿Qué famoso cantante nació en Puerto Rico?",
  ("Shakira", "Jennifer Lopez", "Ricky Martin"),
  "Ricky Martin")
 
 )
 
-respostas = ()
+respuestas = ()
 
-for i, pergunta in enumerate(perguntas):
-    resposta = st.radio(
-        f"{i + 1}. {pergunta[0]}",
-        pergunta[1],
+for i, pregunta in enumerate(preguntas):
+    respuesta = st.radio(
+        f"{i + 1}. {pregunta[0]}",
+        pregunta[1],
         key=i
     )
-    respostas += (resposta,)
+    respuestas += (respuesta,)
 
 if st.button("✅ Finalizar Quiz"):
 
-    pontos = 0
+    puntos = 0
 
-    for i in range(len(perguntas)):
-        if respostas[i] == perguntas[i][2]:
-            pontos += 1
+    for i in range(len(preguntas)):
+        if respuestas[i] == preguntas[i][2]:
+            puntos += 1
 
-    st.header(f"🎯 Você acertou {pontos} de {len(perguntas)} perguntas!")
+    st.header(
+        f"🎯 Obtuviste {puntos} de {len(preguntas)} puntos"
+    )
 
-    if pontos == len(perguntas):
+    if puntos == len(preguntas):
         st.balloons()
-        st.success("🏆 PERFEITO! Você é um especialista em Porto Rico!")
-    elif pontos >= 16:
-        st.success("🔥 Excelente desempenho!")
-    elif pontos >= 11:
-        st.warning("👍 Bom trabalho!")
+        st.success(
+            "🏆 ¡Perfecto! Eres un experto en Puerto Rico."
+        )
+
+    elif puntos >= 16:
+        st.success(
+            "🔥 Excelente desempeño."
+        )
+
+    elif puntos >= 11:
+        st.warning(
+            "👍 Buen trabajo."
+        )
+
     else:
-        st.error("📚 Vale a pena revisar o conteúdo e tentar novamente.")
+        st.error(
+            "📚 Te recomendamos repasar el contenido."
+        )
+
+    st.subheader("📋 Respuestas Correctas")
+
+    for i in range(len(preguntas)):
+
+        pregunta = preguntas[i][0]
+        respuesta_correcta = preguntas[i][2]
+        respuesta_usuario = respuestas[i]
+
+        if respuesta_usuario == respuesta_correcta:
+
+            st.success(
+                f"{i+1}. {pregunta}\n\n"
+                f"Tu respuesta: {respuesta_usuario}\n\n"
+                f"✅ Correcta"
+            )
+
+        else:
+
+            st.error(
+                f"{i+1}. {pregunta}\n\n"
+                f"Tu respuesta: {respuesta_usuario}\n\n"
+                f"✅ Respuesta correcta: {respuesta_correcta}"
+            )
+```
