@@ -25,7 +25,7 @@ questions = [
         "answer": "San Juan"
     },
     {
-        "section": "Datos Generales",
+       
         "q": "2. Puerto Rico es un territorio de cuál país?",
         "options": ["España", "México", "Estados Unidos"],
         "answer": "Estados Unidos"
