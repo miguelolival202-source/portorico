@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Quiz sobre Porto Rico", page_icon="🇵🇷")
 
-st.title("🇵🇷 Quiz sobre Porto Rico")
+st.title("Quiz sobre Porto Rico")
 
 # Texto informativo inicial (5-8 linhas)
 st.markdown("""
