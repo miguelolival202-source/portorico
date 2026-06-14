@@ -1,3 +1,4 @@
+import streamlit as st
 st.title("Quiz sobre Puerto Rico")
 
 st.markdown("""
