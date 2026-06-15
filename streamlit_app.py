@@ -64,7 +64,7 @@ if st.button("Finalizar Quiz"):
     st.write(f"Acertaste {acertos} de {len(perguntas)} preguntas.")
     st.write(f"Porcentaje de aciertos: {porcentagem:.1f}%")
 
-        st.subheader("Gabarito")
+    st.subheader("Gabarito")
 
     for i, pergunta in enumerate(perguntas):
         resposta_usuario = respostas_usuario[i]
