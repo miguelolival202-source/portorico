@@ -43,17 +43,17 @@ perguntas = [
 respostas_usuario = []
 
 for i, pergunta in enumerate(perguntas):
-resposta = st.radio(
-f"{i+1}. {pergunta['pergunta']}",
-pergunta["opcoes"],
-key=i
-)
-respostas_usuario.append(resposta)
+    resposta = st.radio(
+    f"{i+1}. {pergunta['pergunta']}",
+    pergunta["opcoes"],
+    key=i
+    )
+    respostas_usuario.append(resposta)
 
 if st.button("Finalizar Quiz"):
-acertos = 0
+    acertos = 0
 
-```
+    ```
 for i in range(len(perguntas)):
     if respostas_usuario[i] == perguntas[i]["resposta"]:
         acertos += 1
