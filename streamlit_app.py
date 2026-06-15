@@ -54,29 +54,29 @@ if st.button("Finalizar Quiz"):
     acertos = 0
 
     
-for i in range(len(perguntas)):
-    if respostas_usuario[i] == perguntas[i]["resposta"]:
-        acertos += 1
+    for i in range(len(perguntas)):
+        if respostas_usuario[i] == perguntas[i]["resposta"]:
+            acertos += 1
 
-porcentagem = (acertos / len(perguntas)) * 100
+            porcentagem = (acertos / len(perguntas)) * 100
 
-st.subheader("Resultado")
-st.write(f"Acertaste {acertos} de {len(perguntas)} preguntas.")
-st.write(f"Porcentaje de aciertos: {porcentagem:.1f}%")
+            st.subheader("Resultado")
+            st.write(f"Acertaste {acertos} de {len(perguntas)} preguntas.")
+            st.write(f"Porcentaje de aciertos: {porcentagem:.1f}%")
 
-st.subheader("Gabarito")
+        st.subheader("Gabarito")
 
-for i, pergunta in enumerate(perguntas):
-    resposta_usuario = respostas_usuario[i]
-    resposta_correta = pergunta["resposta"]
+    for i, pergunta in enumerate(perguntas):
+        resposta_usuario = respostas_usuario[i]
+        resposta_correta = pergunta["resposta"]
 
-    if resposta_usuario == resposta_correta:
-        st.success(
-            f"{i+1}. {pergunta['pergunta']}\n\nTu respuesta: {resposta_usuario}\n\nRespuesta correcta: {resposta_correta}"
+        if resposta_usuario == resposta_correta:
+                st.success(
+                    f"{i+1}. {pergunta['pergunta']}\n\nTu respuesta: {resposta_usuario}\n\nRespuesta correcta: {resposta_correta}"
         )
-    else:
-        st.error(
-            f"{i+1}. {pergunta['pergunta']}\n\nTu respuesta: {resposta_usuario}\n\nRespuesta correcta: {resposta_correta}"
+         else:
+            st.error(
+             f"{i+1}. {pergunta['pergunta']}\n\nTu respuesta: {resposta_usuario}\n\nRespuesta correcta: {resposta_correta}"
         )
     
 
