@@ -74,7 +74,7 @@ if st.button("Finalizar Quiz"):
                 st.success(
                     f"{i+1}. {pergunta['pergunta']}\n\nTu respuesta: {resposta_usuario}\n\nRespuesta correcta: {resposta_correta}"
         )
-         else:
+        else:
             st.error(
              f"{i+1}. {pergunta['pergunta']}\n\nTu respuesta: {resposta_usuario}\n\nRespuesta correcta: {resposta_correta}"
         )
