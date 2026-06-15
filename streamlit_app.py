@@ -53,7 +53,7 @@ for i, pergunta in enumerate(perguntas):
 if st.button("Finalizar Quiz"):
     acertos = 0
 
- ```
+
 for i in range(len(perguntas)):
     if respostas_usuario[i] == perguntas[i]["resposta"]:
         acertos += 1
