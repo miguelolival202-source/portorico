@@ -58,11 +58,11 @@ if st.button("Finalizar Quiz"):
         if respostas_usuario[i] == perguntas[i]["resposta"]:
             acertos += 1
 
-        porcentagem = (acertos / len(perguntas)) * 100
+    porcentagem = (acertos / len(perguntas)) * 100
 
-        st.subheader("Resultado")
-        st.write(f"Acertaste {acertos} de {len(perguntas)} preguntas.")
-        st.write(f"Porcentaje de aciertos: {porcentagem:.1f}%")
+    st.subheader("Resultado")
+    st.write(f"Acertaste {acertos} de {len(perguntas)} preguntas.")
+    st.write(f"Porcentaje de aciertos: {porcentagem:.1f}%")
 
         st.subheader("Gabarito")
 
